@@ -1,9 +1,10 @@
 import React from 'react';
+
 import { createRoot } from 'react-dom/client';
 
-import reportWebVitals from './reportWebVitals';
-
 import App from '_pages/App';
+
+import reportWebVitals from './reportWebVitals';
 
 const root = createRoot(document.getElementById('root') as HTMLElement);
 
