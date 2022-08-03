@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 import loadable from '@loadable/component';
 
@@ -18,6 +18,7 @@ const App: FC = () => {
       {/* Header */}
       <BrowserRouter>
         <Routes>
+          <Route path={Path.Default} element={<Navigate to={Path.Home} />} />
           <Route path={Path.Home} element={<HomePage />} />
           <Route path={Path.Work} element={<WorkPage />} />
           <Route path={Path.About} element={<AboutPage />} />
