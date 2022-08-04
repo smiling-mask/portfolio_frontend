@@ -7,6 +7,10 @@ export const CustomSlickContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  .slick-slider {
+    width: 100%;
+  }
 `;
 
 export const CustomSlickTitle = styled.div`
@@ -15,23 +19,17 @@ export const CustomSlickTitle = styled.div`
   margin-bottom: 1.25rem;
 `;
 
-export const AbsoluteFill = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-`;
-
 export const CustomSlickImage = styled.div`
+  position: relative;
   width: 100%;
-  padding-top: 120%;
+  padding-top: 75%;
 `;
 
 export const CustomSlickButton = styled.div.attrs({ className: 'clickable' })`
+  padding: 1.25rem 5rem;
+  margin-top: 1.25rem;
   font-size: 1.25rem;
   font-weight: 700;
-  padding: 1.25rem 5rem;
   background-color: ${Color.White};
   color: ${Color.Black};
   border-radius: 0.5rem;

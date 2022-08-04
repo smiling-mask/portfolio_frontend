@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 
 import { useIsImgLoaded } from '_hooks/useIsImageLoaded';
 import loadingImage from '_resources/_images/loading.jpeg';
@@ -7,10 +7,6 @@ import { LazyImageProps } from './types';
 
 const LazyImage: FC<LazyImageProps> = ({ src, alt, lazy = true }) => {
   const { elementRef, isLoaded } = useIsImgLoaded(lazy);
-
-  useEffect(() => {
-    console.log(isLoaded);
-  }, [isLoaded]);
 
   return (
     <img

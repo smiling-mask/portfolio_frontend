@@ -6,7 +6,8 @@ export interface CustomSlickProps {
   slideToScroll?: number;
   autoplay?: boolean;
   autoplaySpeed?: number;
-  // images: File[];
+  arrows?: boolean;
+  images: string[];
 }
 
 interface CustomSlickButton {

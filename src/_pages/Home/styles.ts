@@ -25,7 +25,7 @@ const ColumnFlexSection = styled.div`
 
 const Title = styled.div`
   width: 100%;
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
 `;

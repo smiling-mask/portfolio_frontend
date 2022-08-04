@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 
 import CustomSlick from '_components/Common/CustomSlick';
+import cat1 from '_resources/_images/cat1.jpeg';
+import cat2 from '_resources/_images/cat2.jpeg';
 
 import {
   HomeContainer,
@@ -18,6 +20,8 @@ import {
 } from './styles';
 
 const Home: FC = () => {
+  const slickImages = [cat1, cat2];
+
   return (
     <HomeContainer>
       <GreetingSection>
@@ -27,20 +31,21 @@ const Home: FC = () => {
         </GreetingSectionSubtitle>
         <RowFlexSection>
           <GreetingSectionColumnTextContainer>
-            <GreetingSectionColumnTextTitle>Our developers</GreetingSectionColumnTextTitle>
+            <GreetingSectionColumnTextTitle>Our Developers</GreetingSectionColumnTextTitle>
             <GreetingSectionColumnTextSubtitle>
               Swipe to show more
             </GreetingSectionColumnTextSubtitle>
           </GreetingSectionColumnTextContainer>
           <GreetingSectionSlickContainer>
             <CustomSlick
-              title='Dev Team'
               button={{
                 text: '더 보러가기',
                 onClick: () => {
                   alert('테스트');
                 },
               }}
+              slideToShow={4}
+              images={slickImages}
             />
           </GreetingSectionSlickContainer>
         </RowFlexSection>
