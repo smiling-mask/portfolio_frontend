@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 
 import CustomSlick from '_components/Common/CustomSlick';
+import Cat1 from '_resources/_images/cat1.jpeg';
 
 import {
   HomeContainer,
